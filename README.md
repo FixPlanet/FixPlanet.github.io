@@ -1,1 +1,1 @@
-# FixPlanet.github.io
+# [fixplanet.club](fixplanet.club)
