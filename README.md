@@ -1,1 +1,1 @@
-# [fixplanet.club](fixplanet.club)
+# [fixplanet.club](https://fixplanet.club)
