@@ -42,16 +42,27 @@ footerStuff = do
     background    azure
     borderTop     solid (px 1) lightskyblue
     display       flex
-    flexDirection row
+
+    query Clay.all [Media.maxWidth 1200] $ do
+      flexDirection row
+
+    query Clay.all [Media.maxWidth 800] $ do
+      flexDirection column
 
     li ? do
       lineHeight (px 25)
+
 
     div # ".section" ? do
       firstChild & borderLeft solid (px 1) azure
       paddingLeft  (px 20)
       paddingRight (px 20)
-      borderLeft   solid (px 1) gainsboro
+
+      query Clay.all [Media.maxWidth 1200] $ do
+        borderLeft solid (px 1) gainsboro
+
+      query Clay.all [Media.maxWidth 800] $ do
+        borderLeft solid (px 1) azure
 
 
 links :: Css
