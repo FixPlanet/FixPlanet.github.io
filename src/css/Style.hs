@@ -38,11 +38,18 @@ main = putCss
 footerStuff :: Css
 footerStuff = do
   footer ? do
-    borderTop solid (px 5) lightskyblue
-    allPadding   (px 30)
-    display      flex
-    flexDirection column
-    background azure
+    allPadding    (px 30)
+    background    azure
+    borderTop     solid (px 1) lightskyblue
+    display       flex
+    flexDirection row
+
+
+    div # ".section" ? do
+      firstChild & borderLeft solid (px 1) azure
+      paddingLeft  (px 10)
+      paddingRight (px 10)
+      borderLeft   solid (px 1) lightskyblue
 
 
 links :: Css
@@ -57,12 +64,14 @@ links = do
 
 mainContent :: Css
 mainContent = do
+  -- body ? do
+  --   backgroundColor oldlace
+
   div # "#content" ? do
+    allPadding      (px 30)
     backgroundColor oldlace
-    marginBottom (px 10)
-    allPadding   (px 30)
-    display      flex
-    flexDirection column
+    display         flex
+    flexDirection   column
 
 
 mainHeader :: Css
@@ -70,23 +79,23 @@ mainHeader = do
   "#header" ? do
     marginTop  (px 100)
     (ul # ".menu" <> ul # ".main-menu") ? do
-      margin0
-      padding0
-      marginLeft     (px 20)
-      display        flex
       alignItems     center
-      listStyleType  none
+      display        flex
       justifyContent flexStart
+      listStyleType  none
+      margin0
+      marginLeft     (px 20)
+      padding0
 
       li ? do
         padding0
         a ? do
-          fontSize (px 16)
-          allPadding (px 5)
-          paddingBottom (px 0)
+          allMargin     (px 12)
+          allPadding    (px 5)
+          display       block
+          fontSize      (px 16)
           menuFont
-          display block
-          allMargin (px 12)
+          paddingBottom (px 0)
 
     ul # ".main-menu" ? do
       a ? hover & do
@@ -102,7 +111,6 @@ basics = do
   body ? do
     margin0
     padding0
-    backgroundColor oldlace
 
   let selectionStyle =
         do
