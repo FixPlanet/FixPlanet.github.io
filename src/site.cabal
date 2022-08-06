@@ -1,0 +1,26 @@
+name:               site
+version:            0.1.0.0
+build-type:         Simple
+cabal-version:      >= 1.10
+
+executable site
+  main-is:          site.hs
+  build-depends:    base == 4.*
+                  , MissingH
+                  , aeson
+                  , blaze-html
+                  , clay
+                  , containers
+                  , directory
+                  , filepath
+                  , hakyll
+                  , hakyll-sass
+                  , split
+                  , string-conv
+                  , system-filepath
+                  , tagsoup
+                  , text
+                  , time
+                  , time-locale-compat
+  ghc-options:      -threaded -Wall
+  default-language: Haskell2010

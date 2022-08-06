@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>$title$ - Fix Planet Club</title>
+  <meta name="geo.placename" content="Edinburgh" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fix Planet Club - Climate Tech Micro-Grants!" />
+
+  <!-- <link rel="stylesheet" href="/css/simple.css?$commit$" /> -->
+  <link rel="stylesheet" href="/css/Style.css?$commit$" />
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+
+
+  <!-- Meta tags for little cards and such. -->
+  <meta property="og:title" content="$title$ - Fix Planet Club"/>
+  <meta property='og:url' content="$rootUrl$$url$" />
+  $if(imageDescription)$
+    <meta property="og:image" content="$rootUrl$$image$" />
+    <meta property="og:description" content="$imageDescription$"/>
+  $endif$
+</head>
+<body>
+  <section role="banner" id="header">
+    <nav role="navigation">
+      <div class="container">
+        <ul class="main-menu">
+          <li id="logo"><a href="/"><img alt="Between Books" title="Between Books" src="/images/logo.png" width="300" /></a></li>
+          <li><h2> <small><em>Supporting you to find a sustainable fixed point for the planet :)</em></small>
+            </h2>
+          </li>
+        <ul>
+      </div>
+      <div class="container">
+        <ul class="menu">
+          <li><a alt="Home" title="Home" href="/">Home</a></li>
+          <li><a alt="Blog" title="Blog" href="/">Blog</a></li>
+          <li><a alt="Governance" title="Governance" href="https://github.com/FixPlanet/org#governance">Governance</a></li>
+          <li><a alt="Program committee" title="Program committee" href="https://github.com/FixPlanet/org/blob/main/committee.md">Program committee</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <div id="content" role="main">
+    $body$
+  </div>
+
+  <footer>
+  </footer>
+
+</body>
+</html>
