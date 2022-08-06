@@ -44,17 +44,20 @@ footerStuff = do
     display       flex
     flexDirection row
 
+    li ? do
+      lineHeight (px 25)
 
     div # ".section" ? do
       firstChild & borderLeft solid (px 1) azure
-      paddingLeft  (px 10)
-      paddingRight (px 10)
-      borderLeft   solid (px 1) lightskyblue
+      paddingLeft  (px 20)
+      paddingRight (px 20)
+      borderLeft   solid (px 1) gainsboro
 
 
 links :: Css
 links = do
   a ? do
+    allPadding    (px 2)
     color black
     visited & do
       color black
@@ -64,8 +67,6 @@ links = do
 
 mainContent :: Css
 mainContent = do
-  -- body ? do
-  --   backgroundColor oldlace
 
   div # "#content" ? do
     allPadding      (px 30)
@@ -91,7 +92,6 @@ mainHeader = do
         padding0
         a ? do
           allMargin     (px 12)
-          allPadding    (px 5)
           display       block
           fontSize      (px 16)
           menuFont
