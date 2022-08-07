@@ -27,6 +27,10 @@ stack run -- build
 git checkout gh-pages
 
 
+# - Move down a directory, as we're in 'src' presently.
+
+cd ..
+
 # - Copy the "_site" to the root, but don't delete things we want. (i.e. the
 #   things that are peristed due to branch switches; those things in the
 #   gitignore file.)
@@ -42,7 +46,7 @@ rsync -a --filter='P _site/'      \
          --filter='P CNAME'       \
          --filter='P spellcheck'  \
          --delete-excluded        \
-         _site/ .
+         src/_site/ .
 
 
 # - Add commit and push
