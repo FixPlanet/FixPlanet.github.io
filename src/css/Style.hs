@@ -89,6 +89,12 @@ mainHeader :: Css
 mainHeader = do
   "#header" ? do
     marginTop  (px 100)
+
+    h1 # ".big" ? do
+      allMargin (px 0)
+      color     olive
+      fontSize  (px 41)
+
     (ul # ".menu" <> ul # ".main-menu") ? do
       alignItems     center
       display        flex
