@@ -68,7 +68,6 @@ footerStuff = do
 links :: Css
 links = do
   a ? do
-    allPadding    (px 2)
     color black
     visited & do
       color black

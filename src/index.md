@@ -23,6 +23,8 @@ _Coming soon!_
 
 # Selection criteria <a name="selection-criteria"></a>
 
+_Coming soon!_
+
 
 # Milestones <a name="milestones"></a>
 
@@ -33,3 +35,5 @@ _Coming soon!_
 
 
 # Important dates <a name="important-dates"></a>
+
+_Coming soon!_
