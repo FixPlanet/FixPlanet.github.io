@@ -26,13 +26,13 @@ menuFont     = titleFont
 -------------------------------------------------------------
 
 main :: IO ()
-main = putCss
-  $  basics
-    >> fonts
-    >> mainHeader
-    >> links
-    >> mainContent
-    >> footerStuff
+main = putCss $
+     basics
+  >> fonts
+  >> mainHeader
+  >> links
+  >> mainContent
+  >> footerStuff
 
 
 footerStuff :: Css
@@ -135,9 +135,20 @@ basics = do
 fonts :: Css
 fonts = do
   body ? do
-    fontSize (px 14)
+    fontSize (px 15)
 
-  let fontSelectors = p <> li <> blockquote <> a <> small <> b
+  span # ".amount" ? do
+    borderBottom solid (px 2) lightskyblue
+    fontWeight   bold
+
+  let fontSelectors
+        =  span
+        <> p
+        <> li
+        <> blockquote
+        <> a
+        <> small
+        <> b
 
   fontSelectors ? do
     coreTextFont
