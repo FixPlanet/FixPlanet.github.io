@@ -97,11 +97,10 @@ main = do
       tagsRules tags $ \tag pattern -> do
         route idRoute
         compile $ do
-          books        <- recentFirst =<< loadAll pattern
+          -- books        <- recentFirst =<< loadAll pattern
           tagCloud     <- renderTagCloudWith makeLink (intercalate " ") 90 180 tags
 
           let tagCtx =  constField "tag"        tag
-                     <> listField  "books"      bookContext (return books)
                      <> constField "tagCloud"   tagCloud
                      <> constField "commit"     commitDetails
                      <> bookContext
@@ -131,18 +130,18 @@ main = do
     match "index.md" $ do
       route $ setExtension "html"
       compile $ do
-        updates <- recentFirst =<< loadAll "updates/**"
-        shelfUpdates <- byIssueCreationTime =<< loadAll "shelf/*.md"
+        -- updates <- recentFirst =<< loadAll "updates/**"
+        -- shelfUpdates <- byIssueCreationTime =<< loadAll "shelf/*.md"
 
-        let ctx =  constField "commit"    commitDetails
-                <> listField "books"      bookContext (return updates)
-                <> listField "shelfItems" bookContext (return shelfUpdates)
+        let ctx =  constField "commit" commitDetails
                 <> bbContext
 
         getResourceBody
+          >>= renderPandoc
           >>= applyAsTemplate ctx
           >>= loadAndApplyTemplate "templates/default.html" ctx
           >>= lqipImages imageMetaData
+          >>= addOutImages
           >>= relativizeUrls
 
 
@@ -219,6 +218,10 @@ lqipImages :: ImageMetaDataMap -> Item String -> Compiler (Item String)
 lqipImages imageMetaData = return . fmap (withTags . switchInLqipImages $ imageMetaData)
 
 
+addOutImages :: Item String -> Compiler (Item String)
+addOutImages = return . fmap id
+
+
 data ImageData = ImageData
   { base64String :: String
   , width        :: Int
@@ -244,7 +247,12 @@ computeImageMetaData = do
   return $ M.fromList (map (\i -> (name i, i)) decoded)
 
 
-switchInLqipImages :: ImageMetaDataMap -> (Tag String -> Tag String)
+-- TODO: Actually do something.
+addOutImageInLinks :: Tag String -> Tag String
+addOutImageInLinks t@(TagOpen "a" attrs) = t
+
+
+switchInLqipImages :: ImageMetaDataMap -> Tag String -> Tag String
 switchInLqipImages imageMetaDataMap t@(TagOpen "img" attrs) = newTag
   where
     doLqip      = True -- Could be condition on some class.
