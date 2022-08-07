@@ -14,7 +14,7 @@ acceptance, and the remainder paid out in the accordance of meeting the
 <a href="#milestones">milestones</a>.
 
 All our governance and organisation details can be found open-source on
-GitHub.
+<a alt="FixPlanet on GitHub" title="FixPlanet on GitHub" href="https://github.com/FixPlanet/org">GitHub<img src="/images/out.png" height=10 /></a>.
 
 # Apply <a name="apply"></a>
 
@@ -37,3 +37,18 @@ _Coming soon!_
 # Important dates <a name="important-dates"></a>
 
 _Coming soon!_
+
+# Open feedback <a name="open-feedback"></a>
+
+We value open, honest, thoughtful feedback, and we want to make sure that we
+are operating in a way that people (and the planet!) find useful. Is this
+program of potential interest to you, but missing something? Are there some
+big or small changes to our format that would make it far more effective for
+you?
+
+<!--
+TODO: Include our email address.
+-->
+If you have any thoughts along these lines, please let us know. We can't
+promise to be able to address everything, but we will read and consider
+any communication.
