@@ -35,14 +35,13 @@ cd ..
 #   things that are peristed due to branch switches; those things in the
 #   gitignore file.)
 
-rsync -a --filter='P src/.stack-work' \
+rsync -a --filter='P src/'            \
          --filter='P .git/'           \
          --filter='P .gitignore'      \
          --filter='P .README.md'      \
          --filter='P .nojekyll'       \
          --filter='P metadata'        \
          --filter='P CNAME'           \
-         --filter='P spellcheck'      \
          --delete-excluded            \
          src/_site/ .
 
