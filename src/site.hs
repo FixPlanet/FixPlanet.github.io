@@ -54,7 +54,7 @@ main = do
   imageMetaData <- computeImageMetaData
 
   hakyllWith config $ do
-    match "favicon.ico" $ do
+    match (fromList ["CNAME", "favicon.ico"]) $ do
       route idRoute
       compile copyFileCompiler
 
