@@ -1,0 +1,55 @@
+name: deploy site
+
+on:
+  push:
+    branches:
+      - 'main'
+
+permissions:
+  contents:
+    write
+
+jobs:
+  deploy:
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+
+      - uses: actions/cache@v2
+        with:
+          path: |
+            ~/.stack
+            ./src/.stack-work
+          key: ${{ runner.os }}-stack-${{ hashFiles('./src/stack.yaml.lock', './src/site.cabal') }}
+          restore-keys: |
+            ${{ runner.os }}-stack
+
+
+      - name: GitHub actions env workaround
+        run: 'echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV'
+
+
+      - name: Setup stack
+        uses: mstksg/setup-stack@v2
+
+
+      - name: Generate metadata
+        run: |
+          ./src/scripts/make-image-metadata
+          ./src/scripts/git-metadata
+
+
+      - name: Build site
+        run: |
+          cd src
+          stack run -- clean
+          stack run -- build
+
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ./src/_site
