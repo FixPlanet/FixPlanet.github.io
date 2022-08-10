@@ -38,6 +38,7 @@ jobs:
 
       - name: Generate metadata
         run: |
+          mkdir -p src/metadata
           ./src/scripts/make-image-metadata
           ./src/scripts/git-metadata
 
