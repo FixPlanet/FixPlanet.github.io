@@ -40,7 +40,7 @@ footerStuff = do
   footer ? do
     allPadding    (px 30)
     background    azure
-    borderTop     solid (px 1) lightskyblue
+    borderTop     (px 1) solid lightskyblue
     display       flex
 
     query Clay.all [Media.maxWidth 1200] $ do
@@ -54,15 +54,15 @@ footerStuff = do
 
 
     div # ".section" ? do
-      firstChild & borderLeft solid (px 1) azure
+      firstChild & borderLeft (px 1) solid azure
       paddingLeft  (px 20)
       paddingRight (px 20)
 
       query Clay.all [Media.maxWidth 1200] $ do
-        borderLeft solid (px 1) gainsboro
+        borderLeft (px 1) solid gainsboro
 
       query Clay.all [Media.maxWidth 800] $ do
-        borderLeft solid (px 1) azure
+        borderLeft (px 1) solid azure
 
 
 links :: Css
@@ -143,7 +143,7 @@ fonts = do
     fontSize (px 15)
 
   span # ".amount" ? do
-    borderBottom solid (px 2) lightskyblue
+    borderBottom (px 2) solid lightskyblue
     fontWeight   bold
 
   let fontSelectors
