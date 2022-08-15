@@ -41,28 +41,37 @@ footerStuff = do
     allPadding    (px 30)
     background    azure
     borderTop     (px 1) solid lightskyblue
-    display       flex
 
-    query Clay.all [Media.maxWidth 1200] $ do
-      flexDirection row
+    div # ".final-note" ? do
+      marginTop (px 30)
+      marginBottom (px 30)
+      color  dimgray
+      display flex
+      justifyContent center
 
-    query Clay.all [Media.maxWidth 800] $ do
-      flexDirection column
-
-    li ? do
-      lineHeight (px 25)
-
-
-    div # ".section" ? do
-      firstChild & borderLeft (px 1) solid azure
-      paddingLeft  (px 20)
-      paddingRight (px 20)
+    div # ".sections" ? do
+      display flex
+      justifyContent spaceEvenly
 
       query Clay.all [Media.maxWidth 1200] $ do
-        borderLeft (px 1) solid gainsboro
+        flexDirection row
 
       query Clay.all [Media.maxWidth 800] $ do
-        borderLeft (px 1) solid azure
+        flexDirection column
+
+      li ? do
+        lineHeight (px 25)
+
+      div # ".section" ? do
+        firstChild & borderLeft (px 1) solid azure
+        paddingLeft  (px 20)
+        paddingRight (px 20)
+
+        query Clay.all [Media.maxWidth 1200] $ do
+          borderLeft (px 1) solid gainsboro
+
+        query Clay.all [Media.maxWidth 800] $ do
+          borderLeft (px 1) solid azure
 
 
 links :: Css
