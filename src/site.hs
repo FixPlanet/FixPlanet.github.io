@@ -2,32 +2,47 @@
 {-# language FlexibleContexts  #-}
 {-# language OverloadedStrings #-}
 {-# language TupleSections     #-}
-{-# language TypeApplications  #-}
 
-import           Data.Time.Clock             (UTCTime (..))
-import           Data.Time.Format            (parseTimeM)
-import           Data.List                   (sortBy)
+-- aeson
+import           Data.Aeson                  (FromJSON, decode')
+
+-- base
+import           Control.Monad               (liftM)
+import           Data.List                   (intercalate, isInfixOf, isPrefixOf, isSuffixOf, sort, sortBy)
+import           Data.Maybe                  (fromJust, fromMaybe, isJust)
 import           Data.Ord                    (comparing)
-import           Data.Time.Locale.Compat     (TimeLocale, defaultTimeLocale)
-import           Control.Monad (liftM)
-import           Data.Aeson
-import           Data.List
-import           Data.List.Split (splitOn)
-import           Data.String.Utils (strip)
-import           Data.Maybe (fromJust, isJust, fromMaybe, maybe)
-import           Data.String.Conv (toS)
-import           GHC.Generics
-import           Hakyll
-import           Hakyll.Core.UnixFilter (unixFilter)
-import           System.Environment (lookupEnv)
-import           System.FilePath
-import           Text.HTML.TagSoup (Tag (..))
-import qualified Text.Blaze.Html5                as H
-import qualified Text.Blaze.Html5.Attributes     as A
+import           GHC.Generics                (Generic)
+
+-- blaze-html
 import           Text.Blaze.Html                 (toHtml, toValue, (!))
 import           Text.Blaze.Html.Renderer.String (renderHtml)
+import qualified Text.Blaze.Html5                as H
+import qualified Text.Blaze.Html5.Attributes     as A
+
+-- containers
 import qualified Data.Map as M
 
+-- filepath
+import           System.FilePath             (takeFileName)
+
+-- hakyll
+import           Hakyll
+
+-- MissingH
+import           Data.String.Utils           (strip)
+
+-- string-conv
+import           Data.String.Conv            (toS)
+
+-- tagsoup
+import           Text.HTML.TagSoup           (Tag (..))
+
+-- time
+import           Data.Time.Clock             (UTCTime (..))
+import           Data.Time.Format            (parseTimeM)
+
+-- time-locale-compat
+import           Data.Time.Locale.Compat     (TimeLocale, defaultTimeLocale)
 
 config :: Configuration
 config = defaultConfiguration
