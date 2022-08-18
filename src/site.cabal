@@ -9,17 +9,11 @@ executable site
                   , MissingH
                   , aeson
                   , blaze-html
-                  , clay
                   , containers
-                  , directory
                   , filepath
                   , hakyll
-                  , hakyll-sass
-                  , split
                   , string-conv
-                  , system-filepath
                   , tagsoup
-                  , text
                   , time
                   , time-locale-compat
   ghc-options:      -threaded -Wall
