@@ -9,6 +9,7 @@ executable site
                   , MissingH
                   , aeson
                   , blaze-html
+                  , clay
                   , containers
                   , filepath
                   , hakyll
