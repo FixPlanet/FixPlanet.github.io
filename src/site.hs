@@ -142,6 +142,28 @@ main = do
           >>= relativizeUrls
 
 
+    match "project-selection-committee/*.md" $ do
+      compile getResourceBody
+
+
+    match "committee.md" $ do
+      route $ setExtension "html"
+      compile $ do
+        members <- alphabetically =<< loadAll "project-selection-committee/*.md"
+
+        let ctx =  listField "members" bbContext (return members)
+                <> constField "commit" commitDetails
+                <> bbContext
+
+        getResourceBody
+          >>= applyAsTemplate ctx
+          >>= renderPandoc
+          >>= loadAndApplyTemplate "templates/default.html" ctx
+          >>= lqipImages imageMetaData
+          >>= addOutImages
+          >>= relativizeUrls
+
+
     match "index.md" $ do
       route $ setExtension "html"
       compile $ do
@@ -168,10 +190,13 @@ byIssueCreationTime = liftM reverse . chronological'
 chronological' :: (MonadMetadata m) => [Item a] -> m [Item a]
 chronological' =
     sortByM $ getItemUTC' defaultTimeLocale . itemIdentifier
-  where
-    sortByM :: (Monad m, Ord k) => (a -> m k) -> [a] -> m [a]
-    sortByM f xs = liftM (map fst . sortBy (comparing snd)) $
-                   mapM (\x -> liftM (x,) (f x)) xs
+
+alphabetically :: (MonadMetadata m) => [Item a] -> m [Item a]
+alphabetically = sortByM (pure . itemIdentifier)
+
+sortByM :: (Monad m, Ord k) => (a -> m k) -> [a] -> m [a]
+sortByM f xs = liftM (map fst . sortBy (comparing snd)) $
+                mapM (\x -> liftM (x,) (f x)) xs
 
 getItemUTC' :: (MonadMetadata m)
             => TimeLocale        -- ^ Output time locale
