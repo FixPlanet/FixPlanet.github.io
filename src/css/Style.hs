@@ -32,7 +32,32 @@ main = putCss $
   >> mainHeader
   >> links
   >> mainContent
+  >> members
   >> footerStuff
+
+
+members :: Css
+members = do
+  div # ".committee-members" ? do
+    display       flex
+    flexDirection row
+    flexWrap      (FlexWrap "wrap")
+
+    div # ".member" ? do
+      "box-shadow" -: "14px 14px 36px -3px rgba(0,0,0,0.1);"
+      allBorderRadius (px 10)
+      allMargin       (px 20)
+      allPadding      (px 20)
+      display         flex
+      flexDirection   row
+      width           (px 600)
+
+      div # ".image" ? do
+        marginRight (px 15)
+
+      img ? do
+        allBorderRadius (px 150)
+        width           (px 150)
 
 
 footerStuff :: Css

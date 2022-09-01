@@ -9,8 +9,13 @@ Projects will be reviewed by this group of people.
 <div class="committee-members">
 $for(members)$
 <div class="member">
-  <h2> $name$ </h2>
+  <div class="image">
+   <img src="/images/project-selection-committee/$imageName$" />
+  </div>
+  <div class="member-content">
+  <h2> <a href="$link$">$name$</a></h2>
    $body$
+  </div>
 </div>
 $endfor$
 </div>
