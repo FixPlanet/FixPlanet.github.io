@@ -46,7 +46,7 @@ members = do
     div # ".member" ? do
       "box-shadow" -: "14px 14px 36px -3px rgba(0,0,0,0.1);"
       allBorderRadius (px 10)
-      allMargin       (px 20)
+      allMargin       (px 10)
       allPadding      (px 20)
       display         flex
       flexDirection   row
