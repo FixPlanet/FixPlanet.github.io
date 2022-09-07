@@ -24,6 +24,10 @@ around the overall project structure and operating procedures. Ultimately,
 responsibility for these decisions sits with the [trustees](/committee.html), but we believe that
 they should be established and discussed as a community.
 - **Term** - The expectation is that you will be on the committee for 1 year.
+- **Advocate** - A willingness to advocate for the program within your
+communities. A big part of the way we hope to reach diverse groups of people
+is through our committee members; as such, you should be willing to reach out
+to your communities and invite them to apply to the program.
 
 ## Criteria
 
@@ -51,6 +55,14 @@ guidance from the existing committee.
 If you'd like to join, please reach out to us at
 [fixplanetclub@protonmail.com](mailto:fixplanetclub@protonmail.com), or on
 [slack](https://join.slack.com/t/fixplanetclub/shared_invite/zt-1dwnqqvuc-5sXa4HYsl81T9N35W~M9CA), and we'll be in touch for a chat!
+
+## Other ways of participating
+
+Note that it is certainly _not_ necessary to join the project selection
+committee to otherwise have a say on how we operate. Our
+[slack](https://join.slack.com/t/fixplanetclub/shared_invite/zt-1dwnqqvuc-5sXa4HYsl81T9N35W~M9CA)
+is open to all and we invite your particiation, as is our [governing documents
+on GitHub](https://github.com/FixPlanet/org).
 
 [^agree]: We don't need you to agree 100%; in fact, it's probably useful if you
 bring some alternative perspectives and challenge our thinking.
