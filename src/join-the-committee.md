@@ -32,7 +32,7 @@ You don't need to be an expert to join this group. The essential conditions
 are:
 
 1. You (roughly[^agree]) agree with our [operating principles and core mission](https://github.com/FixPlanet/org#mission),
-2. You've bring a perspective, set of personal experiences, or local knowledge
+2. You bring a perspective, set of personal experiences, or local knowledge
    and expertise that isn't already well-covered by our [existing committee
    members](/committee.html). We value diversity, and would like this to be
    representing our committee,
