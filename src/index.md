@@ -13,8 +13,8 @@ directly to your bank account. Payment is made in three parts, forty percent
 upon acceptance, and the remainder paid out in the accordance of meeting the
 <a href="#milestones">milestones</a>.
 
-All our governance and organisation details can be found open-source on
-<a alt="FixPlanet on GitHub" title="FixPlanet on GitHub" href="https://github.com/FixPlanet/org">GitHub<img src="/images/out.png" height=10 /></a>.
+<img alt="Payout scheme according to the milestones: 40% on acceptance, 30% on check-in and the final 30% on the final deliverable." src="/images/payout.png"
+width="400" />
 
 # Apply <a name="apply"></a>
 
@@ -46,11 +46,11 @@ program of potential interest to you, but missing something? Are there some
 big or small changes to our format that would make it far more effective for
 you?
 
-<!--
-TODO: Include our email address.
--->
 If you have any thoughts along these lines, please let us know. We can't
 promise to be able to address everything, but we will read and consider
 any communication.
 
+# Governance
 
+All our governance and organisation details can be found open-source on
+<a alt="FixPlanet on GitHub" title="FixPlanet on GitHub" href="https://github.com/FixPlanet/org">GitHub<img src="/images/out.png" height=10 /></a>.
