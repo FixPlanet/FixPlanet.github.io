@@ -4,7 +4,8 @@ title: Project Selection Committee
 
 # Project selection committee <a name="project-selection-committee"></a>
 
-Projects will be reviewed by this group of people.
+Projects will be reviewed by this group of people. <a
+href="/join-the-committee.html">Interested in joining us?</a>
 
 <div class="committee-members">
 $for(members)$
