@@ -24,7 +24,6 @@ around the overall project structure and operating procedures. Ultimately,
 responsibility for these decisions sits with the [trustees](/committee.html), but we believe that
 they should be established and discussed as a community.
 - **Term** - The expectation is that you will be on the committee for 1 year.
-Committee membership will be reviewed and approved by the trustees.
 
 ## Criteria
 
@@ -35,10 +34,17 @@ are:
 2. You bring a perspective, set of personal experiences, or local knowledge
    and expertise that isn't already well-covered by our [existing committee
    members](/committee.html). We value diversity, and would like this to be
-   representing our committee,
+   represented in our committee make-up,
 3. You have a passion for _somehow_ bringing technology, and critical thinking
    thereof, to bear on the climate (and associated) crises.
 
+## Operations
+
+- There total size of the committee will be limited to 15 people.
+- Each project submission will be evaluated by only a subset of the total pool
+of committee members.
+- Committee membership will be reviewed and approved by the trustees, under
+guidance from the existing committee.
 
 ## Next steps
 
