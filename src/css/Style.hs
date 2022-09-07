@@ -53,11 +53,24 @@ members = do
       width           (px 600)
 
       div # ".image" ? do
-        marginRight (px 15)
+        alignItems     center
+        display        flex
+        flexDirection  column
+        justifyContent flexStart
+        marginRight    (px 15)
 
       img ? do
         allBorderRadius (px 150)
         width           (px 150)
+        marginBottom    (px 10)
+
+      span # ".co-founder" ? do
+        allBorderRadius (px 5)
+        allPadding      (px 4)
+        background      lavender
+        fontSize        (px 11)
+        monoFont
+        textDecoration  none
 
 
 footerStuff :: Css

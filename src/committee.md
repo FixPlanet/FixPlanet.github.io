@@ -11,9 +11,11 @@ $for(members)$
 <div class="member">
   <div class="image">
    <img src="/images/project-selection-committee/$imageName$" />
+   $if(cofounder)$ <span class="co-founder">co-founder</span> $endif$
   </div>
   <div class="member-content">
-  <h2> <a href="$link$">$name$</a></h2>
+  <h2> <a href="$link$">$name$</a>
+  </h2>
    $body$
   </div>
 </div>
