@@ -13,7 +13,7 @@ GitHub](https://github.com/FixPlanet/org).
 
 ## Expectations
 
-- **Project review** - Willingness, ability adn time to review projects and participate
+- **Project review** - Willingness, ability and time to review projects and participate
 in project interviews. Estimated time committment: 4-5 hours per month.
 - **Community involvement** - Willingness to join our [slack
 community](https://join.slack.com/t/fixplanetclub/shared_invite/zt-1dwnqqvuc-5sXa4HYsl81T9N35W~M9CA) and involve yourself in discussions that pique your interest.
