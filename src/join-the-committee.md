@@ -39,7 +39,7 @@ are:
    and expertise that isn't already well-covered by our [existing committee
    members](/committee.html). We value diversity, and would like this to be
    represented in our committee make-up,
-3. You have a passion for _somehow_ bringing technology, and critical thinking
+3. You have a passion for _somehow_ bringing technology, and critical (re-)thinking
    thereof, to bear on the climate (and associated) crises.
 
 ## Operations
