@@ -62,7 +62,9 @@ Note that it is certainly _not_ necessary to join the project selection
 committee to otherwise have a say on how we operate. Our
 [slack](https://join.slack.com/t/fixplanetclub/shared_invite/zt-1dwnqqvuc-5sXa4HYsl81T9N35W~M9CA)
 is open to all and we invite your particiation, as is our [governing documents
-on GitHub](https://github.com/FixPlanet/org).
+on GitHub](https://github.com/FixPlanet/org). If you're curious to see how we
+operate, then following along on either of these areas is the best way to get an
+understanding.
 
 [^agree]: We don't need you to agree 100%; in fact, it's probably useful if you
 bring some alternative perspectives and challenge our thinking.
