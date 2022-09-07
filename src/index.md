@@ -6,7 +6,14 @@ title: Home
 
 _Fix Planet Club_ is a microgrant program focused on supporting innovation and
 research in the climate technology space. In particular we support individuals
-with a specific project in mind.
+wishing to undertake a project satisfying the following criteria.
+
+## Criteria
+
+The project:
+$partial("org-docs/essential-criteria.html")$
+
+## Grant size
 
 We offer a <span class="amount">£1,000</span> no strings attached grant, paid
 directly to your bank account. Payment is made in three parts, forty percent
@@ -15,6 +22,7 @@ upon acceptance, and the remainder paid out in the accordance of meeting the
 
 <img alt="Payout scheme according to the milestones: 40% on acceptance, 30% on check-in and the final 30% on the final deliverable." src="/images/payout.png"
 width="400" />
+
 
 # Apply <a name="apply"></a>
 
@@ -37,6 +45,7 @@ _Coming soon!_
 # Important dates <a name="important-dates"></a>
 
 _Coming soon!_
+
 
 # Open feedback <a name="open-feedback"></a>
 
