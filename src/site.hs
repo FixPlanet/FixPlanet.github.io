@@ -131,7 +131,7 @@ main = do
             >>= relativizeUrls
 
     match (fromList
-            [ "about.md"
+            [ "join-the-committee.md"
             ]) $ do
       route $ setExtension "html"
       compile $ do
@@ -139,8 +139,8 @@ main = do
                 <> bbContext
 
         getResourceBody
-          >>= renderPandoc
           >>= applyAsTemplate ctx
+          >>= renderPandoc
           >>= loadAndApplyTemplate "templates/default.html" ctx
           >>= lqipImages imageMetaData
           >>= relativizeUrls
