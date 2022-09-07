@@ -51,7 +51,7 @@ jobs:
 
       - name: Build site
         run: |
-          nix-shell
+          nix-shell --run 'exit'
           cd src
           stack run -- clean
           stack run -- build
