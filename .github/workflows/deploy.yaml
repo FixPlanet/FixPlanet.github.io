@@ -44,8 +44,14 @@ jobs:
           ./scripts/git-metadata
 
 
+      - uses: cachix/install-nix-action@v15
+        with:
+          nix_path: nixpkgs=channel:nixos-22.05
+
+
       - name: Build site
         run: |
+          nix-shell
           cd src
           stack run -- clean
           stack run -- build
