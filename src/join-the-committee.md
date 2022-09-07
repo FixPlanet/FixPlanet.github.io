@@ -15,7 +15,7 @@ GitHub](https://github.com/FixPlanet/org).
 ## Expectations
 
 - **Project review** - Willingness and ability to review projects and participate
-in project interviews. Expected time committment: 2-3 hours per month.
+in project interviews. Expected time committment: 4-5 hours per month.
 - **Community involvement** - Willingness to join our [slack
 community](https://join.slack.com/t/fixplanetclub/shared_invite/zt-1dwnqqvuc-5sXa4HYsl81T9N35W~M9CA) and involve yourself in discussions that pique your interest.
 - **Internal governance** - Interest in participating in our general
@@ -23,6 +23,8 @@ governance process, by participating in discussions on slack and/or GitHub
 around the overall project structure and operating procedures. Ultimately,
 responsibility for these decisions sits with the [trustees](/committee.html), but we believe that
 they should be established and discussed as a community.
+- **Term** - The expectation is that you will be on the committee for 1 year.
+Committee membership will be reviewed and approved by the trustees.
 
 ## Criteria
 
