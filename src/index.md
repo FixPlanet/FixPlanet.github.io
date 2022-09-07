@@ -9,8 +9,8 @@ research in the climate technology space. In particular we support individuals
 with a specific project in mind.
 
 We offer a <span class="amount">£1,000</span> no strings attached grant, paid
-directly to your bank account. Payment is made in three parts, half upon
-acceptance, and the remainder paid out in the accordance of meeting the
+directly to your bank account. Payment is made in three parts, forty percent
+upon acceptance, and the remainder paid out in the accordance of meeting the
 <a href="#milestones">milestones</a>.
 
 All our governance and organisation details can be found open-source on
