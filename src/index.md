@@ -53,4 +53,4 @@ any communication.
 # Governance
 
 All our governance and organisation details can be found open-source on
-<a alt="FixPlanet on GitHub" title="FixPlanet on GitHub" href="https://github.com/FixPlanet/org">GitHub<img src="/images/out.png" height=10 /></a>.
+<a alt="FixPlanet on GitHub" title="FixPlanet on GitHub" href="https://github.com/FixPlanet/org">GitHub<img src="/images/out.png" height=10 /></a>. We invite (and welcome!) your participation through GitHub or slack.
