@@ -64,13 +64,16 @@ members = do
         width           (px 150)
         marginBottom    (px 10)
 
-      span # ".co-founder" ? do
+      (span # ".co-founder" <> span # ".trustee") ? do
         allBorderRadius (px 5)
         allPadding      (px 4)
-        background      lavender
         fontSize        (px 11)
+        allMargin       (px 5)
         monoFont
         textDecoration  none
+
+      span # ".co-founder" ? background lavender
+      span # ".trustee"    ? background wheat
 
 
 footerStuff :: Css
