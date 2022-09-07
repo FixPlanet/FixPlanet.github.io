@@ -10,8 +10,7 @@ Projects will be reviewed by this group of people.
 $for(members)$
 <div class="member">
   <div class="image">
-   <img src="/images/project-selection-committee/$imageName$" />
-   $if(cofounder)$ <span class="co-founder">co-founder</span> $endif$
+   <img src="/images/project-selection-committee/$imageName$" /> $if(cofounder)$<span class="co-founder">co-founder</span>$endif$ $if(trustee)$<span class="trustee">trustee</span>$endif$
   </div>
   <div class="member-content">
   <h2> <a href="$link$">$name$</a>
