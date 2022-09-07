@@ -127,7 +127,6 @@ links = do
 
 mainContent :: Css
 mainContent = do
-
   div # "#content" ? do
     allPadding      (px 30)
     backgroundColor oldlace

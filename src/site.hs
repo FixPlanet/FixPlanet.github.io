@@ -77,6 +77,10 @@ main = do
       route idRoute
       compile templateBodyCompiler
 
+    match "org-docs/*" $ do
+      route idRoute
+      compile $ templateBodyCompiler
+
     match "images/**" $ do
       route idRoute
       compile copyFileCompiler
