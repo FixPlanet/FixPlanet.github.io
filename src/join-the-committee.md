@@ -20,7 +20,7 @@ community](https://join.slack.com/t/fixplanetclub/shared_invite/zt-1dwnqqvuc-5sX
 - **Internal governance** - Interest in participating in our general
 governance process, by participating in discussions on slack and/or GitHub
 around the overall project structure and operating procedures. Ultimately,
-responsibility for these decisions sits with the [trustees](/committee.html), but pragmatically 
+responsibility for these decisions sits with the [trustees](/committee.html), but pragmatically
 we believe that they should be established and discussed openly as a community.
 - **Term** - The expectation is that you will be on the committee for at least 1 year.
 - **Advocate** - A willingness to advocate for the program within your
@@ -44,8 +44,11 @@ are:
 - The total size of the committee will be limited to 15 people.
 - Each project submission will be evaluated by a subset of the total pool
 of committee members (exactly how we do that is TBD, join the [slack](https://join.slack.com/t/fixplanetclub/shared_invite/zt-1dwnqqvuc-5sXa4HYsl81T9N35W~M9CA) to discuss!).
-- Committee membership will be reviewed by the existing committee and approved by the 
+- Committee membership will be reviewed by the existing committee and approved by the
 trustees, as a formality.
+- Membership in the committee is voluntary (i.e. unpaid). While this may
+change one day, for now we're prioritising the money for the the recipients of the
+grants.
 
 ## Next steps
 
