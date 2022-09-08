@@ -52,6 +52,9 @@ members = do
       flexDirection   row
       width           (px 600)
 
+      query Clay.all [Media.maxWidth 800] $ do
+        flexDirection column
+
       div # ".image" ? do
         alignItems     center
         display        flex
@@ -152,6 +155,10 @@ mainHeader = do
       margin0
       marginLeft     (px 20)
       padding0
+
+      query Clay.all [Media.maxWidth 800] $ do
+        flexDirection column
+        allMargin (px 10)
 
       li ? do
         padding0
