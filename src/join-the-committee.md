@@ -37,7 +37,7 @@ are:
    and expertise that isn't already well-covered by our [existing committee
    members](/committee.html). We value diversity, and are working hard to ensure this is
    represented in our committee make-up,
-3. You have a passion for _somehow_ bringing technology, and critical (re-)thinking
+3. You are interested in, and like to critically rethink, the role that technology has in relation with the climate (and associated) crises.
    to bear on the climate (and associated) crises.
 
 ## Operations
