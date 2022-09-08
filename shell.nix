@@ -4,8 +4,8 @@ with pkgs;
 
 let org = pkgs.fetchgit {
             url      = "https://github.com/FixPlanet/org";
-            rev      = "d05b8ebe306fc210069e263f48f5625fc47a0a41";
-            sha256   = "sha256-eLvKaNmlhExuIy8oBXEqdv3nKhdoVleI2QWpKrLBkL0=";
+            rev      = "75d4ba04eea558544c672227b772c8c7e30db1c9";
+            sha256   = "sha256-W5GHfMSo+WV+Rr79G2Fa4k5A0kZ4DFA5G7whY0BKWlg=";
             fetchLFS = true;
           };
     path = "project-selection-committee";
