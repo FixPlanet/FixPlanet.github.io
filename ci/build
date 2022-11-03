@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -ex
+
+cd src
+
+stack run -- clean
+stack run -- build
