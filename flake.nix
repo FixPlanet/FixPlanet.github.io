@@ -45,12 +45,12 @@
           stack-wrapped
           # External C libraries needed by some Haskell packages
           pkgs.zlib
+          pkgs.pandoc
         ];
     in rec {
       devShell = pkgs.mkShell {
         buildInputs = [
           myDevTools
-          pkgs.pandoc
         ];
 
         shellHook = ''
