@@ -4,5 +4,10 @@ set -ex
 
 cd src
 
+echo "Using stack ..."
+echo `which stack`
+
+stack build
+
 stack run -- clean
 stack run -- build

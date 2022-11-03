@@ -18,6 +18,16 @@ jobs:
         uses: actions/checkout@v3
 
 
+      - uses: actions/cache@v2
+        with:
+          path: |
+            ~/.stack
+            ./src/.stack-work
+          key: ${{ runner.os }}-stack-${{ hashFiles('./src/stack.yaml.lock', './src/site.cabal') }}
+          restore-keys: |
+            ${{ runner.os }}-stack
+
+
       - name: GitHub actions env workaround
         run: 'echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV'
 
@@ -37,7 +47,7 @@ jobs:
 
       - name: Build site
         run: |
-          nix develop --command "./ci/build"
+          nix develop --command ./ci/build
 
 
       - name: Deploy
