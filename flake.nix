@@ -45,6 +45,7 @@
           stack-wrapped
           # External C libraries needed by some Haskell packages
           pkgs.zlib
+          pkgs.zlib.dev
           pkgs.pandoc
         ];
     in rec {
