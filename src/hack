@@ -4,4 +4,4 @@ set -ex
 
 echo 123 >metadata/gitinfo
 
-stack run -- clean && stack run -- watch
+cabal run -- site clean && cabal run -- site watch

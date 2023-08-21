@@ -93,7 +93,7 @@ main = do
       -- See: https://jaspervdj.be/hakyll/tutorials/using-clay-with-hakyll.html
       route   $ setExtension "css"
 
-      let cssStr = getResourceString >>= withItemBody (unixFilter "stack" ["runghc"])
+      let cssStr = getResourceString >>= withItemBody (unixFilter "runghc" [])
       compile $ fmap compressCss <$>  cssStr
 
 

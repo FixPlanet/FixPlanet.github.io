@@ -1,40 +1,42 @@
 {
   "nodes": {
-    "flake-utils": {
+    "nixpkgs": {
       "locked": {
-        "lastModified": 1667395993,
-        "narHash": "sha256-nuEHfE/LcWyuSWnS8t12N1wc105Qtau+/OdUAjtQ0rA=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "5aed5285a952e0b949eb3ba02c12fa4fcfef535f",
+        "lastModified": 1692414505,
+        "narHash": "sha256-sSTuyR9JYSxmUcYcj0Jvw1hIq1tz/Canw9mK0hEJvnE=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "4cdad15f34e6321a2f789b99d42815b9142ac2ba",
         "type": "github"
       },
       "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
+        "owner": "nixos",
+        "ref": "nixos-23.05",
+        "repo": "nixpkgs",
         "type": "github"
       }
     },
-    "nixpkgs": {
+    "orgRepo": {
+      "flake": false,
       "locked": {
-        "lastModified": 1667318659,
-        "narHash": "sha256-mRXqCdlnxPgm3Wk7mNAOanl7B3Q3U5scYTEiyYmNEOE=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "b3a8f7ed267e0a7ed100eb7d716c9137ff120fe3",
+        "lastModified": 1692604237,
+        "narHash": "sha256-SoqsrPIAmm8omHsCChBCS7X24XgGMyJSq+3drbNmErs=",
+        "owner": "FixPlanet",
+        "repo": "org",
+        "rev": "9fcdb024ba0cb11aec3b1f8469ec64658c19e2ca",
         "type": "github"
       },
       "original": {
-        "owner": "nixos",
-        "ref": "nixos-22.05",
-        "repo": "nixpkgs",
+        "owner": "FixPlanet",
+        "repo": "org",
+        "rev": "9fcdb024ba0cb11aec3b1f8469ec64658c19e2ca",
         "type": "github"
       }
     },
     "root": {
       "inputs": {
-        "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "orgRepo": "orgRepo"
       }
     }
   },

@@ -4,10 +4,7 @@ set -ex
 
 cd src
 
-echo "Using stack ..."
-echo `which stack`
+cabal build
 
-stack build
-
-stack run -- clean
-stack run -- build
+cabal run -- site clean
+cabal run -- site build
