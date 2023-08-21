@@ -4,6 +4,7 @@ set -ex
 
 cd src
 
+cabal update
 cabal build
 
 cabal run -- site clean
